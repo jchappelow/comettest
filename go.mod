@@ -1,4 +1,4 @@
-module comettest
+module github.com/jchappelow/comettest
 
 go 1.23.0
 

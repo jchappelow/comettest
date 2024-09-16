@@ -2,40 +2,18 @@ package main
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"os"
 	"os/signal"
 	"syscall"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	"github.com/cometbft/cometbft/abci/server"
+	"github.com/jchappelow/comettest/app"
 )
 
 func main() {
-	if len(os.Args) < 2 {
-		fmt.Println("specify db dir")
-		os.Exit(1)
-	}
-	dbDir := os.Args[1]
-	app := kvstore.NewPersistentApplication(dbDir)
-
-	port := "26658"
-	if len(os.Args) > 2 {
-		port = os.Args[2]
-	}
-
-	laddr := "0.0.0.0:" + port
-	server, _ := server.NewServer("tcp://"+laddr, "socket", app)
-	if err := server.Start(); err != nil {
-		panic(err)
-	}
-
-	fmt.Printf("started app: listening on %v / db in %v\n", laddr, dbDir)
-
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
-
-	// node.NewNodeWithContext(ctx, )
 
 	signalChan := make(chan os.Signal, 1)
 	signal.Notify(signalChan, os.Interrupt, syscall.SIGTERM)
@@ -45,9 +23,32 @@ func main() {
 		cancel()
 	}()
 
+	if err := mainCore(ctx); err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+	os.Exit(0)
+}
+
+func mainCore(ctx context.Context) error {
+	if len(os.Args) < 2 {
+		return errors.New("specify db dir")
+	}
+	dbDir := os.Args[1]
+
+	port := "26658"
+	if len(os.Args) > 2 {
+		port = os.Args[2]
+	}
+
+	server, err := app.StartAppServer(ctx, dbDir, port)
+	if err != nil {
+		return err
+	}
+
 	<-ctx.Done()
 
-	if err := server.Stop(); err != nil {
-		panic(err)
-	}
+	fmt.Println("stopping app server")
+
+	return server.Stop()
 }
