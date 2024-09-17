@@ -2,5 +2,6 @@ comettest
 multi/multi
 n*/data/*.db
 n*/data/*.wal
+n*/data/write-file-atomic-*
 n*/app/kvstore.db
 n*/config/addrbook.json
