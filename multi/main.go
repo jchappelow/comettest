@@ -35,7 +35,7 @@ func main() {
 }
 
 func mainCore(ctx context.Context) error {
-	dbDirs := []string{"n3x", "n0", "n2", "n3", "n1"} // n1 last
+	dbDirs := []string{"n0", "n1", "n2", "n3", "n3x"}
 	ports := []string{"26658", "26758", "26858", "26958", "36958"}
 
 	pwd, _ := os.Getwd()
