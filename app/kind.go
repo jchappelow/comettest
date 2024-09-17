@@ -14,6 +14,7 @@ import (
 
 	"github.com/cometbft/cometbft/abci/types"
 	cryptoencoding "github.com/cometbft/cometbft/crypto/encoding"
+	cometBytes "github.com/cometbft/cometbft/libs/bytes"
 	"github.com/cometbft/cometbft/libs/log"
 	cryptoproto "github.com/cometbft/cometbft/proto/tendermint/crypto"
 	"github.com/cometbft/cometbft/version"
@@ -217,11 +218,11 @@ func (app *Application) FinalizeBlock(_ context.Context, req *types.RequestFinal
 					Power:  ev.Validator.Power - 1,
 				})
 				app.logger.Info("Decreased val power by 1 because of the equivocation",
-					"val", addr)
+					"val", cometBytes.HexBytes(ev.Validator.Address))
 			} else {
-				app.logger.Error("******************** wanted to punish val %x but can't find it!!!!!!!!", []byte(addr))
-				// continue
-				return nil, fmt.Errorf("wanted to punish val %x but can't find it!!!!!!!!", []byte(addr))
+				app.logger.Error(fmt.Sprintf("******************** wanted to punish val %x but can't find it!!!!!!!!", ev.Validator.Address))
+				continue
+				// return nil, fmt.Errorf("wanted to punish val %x but can't find it!!!!!!!!", ev.Validator.Address)
 			}
 		}
 	}

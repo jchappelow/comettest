@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 rm -r {n0,n1,n2,n3,n3x}/app
+rm -r {n0,n1,n2,n3,n3x}/config/addrbook.json
 rm -r {n0,n1,n2,n3,n3x}/data/*.wal
 rm -r {n0,n1,n2,n3,n3x}/data/*.db
 echo '{"height": "0","round":0,"step":0}' > n0/data/priv_validator_state.json
