@@ -219,8 +219,10 @@ func (app *Application) FinalizeBlock(_ context.Context, req *types.RequestFinal
 				app.logger.Info("Decreased val power by 1 because of the equivocation",
 					"val", addr)
 			} else {
-				app.logger.Error("wanted to punish val %q but can't find it!!!!!!!!", addr)
+				fmt.Printf("wanted to punish val %x but can't find it!!!!!!!!\n", []byte(addr))
+				app.logger.Error("wanted to punish val %x but can't find it!!!!!!!!", []byte(addr))
 				continue
+				// return nil, fmt.Errorf("wanted to punish val %q but can't find it!!!!!!!!", addr)
 			}
 		}
 	}
