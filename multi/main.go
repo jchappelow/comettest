@@ -61,7 +61,7 @@ func mainCore(ctx context.Context) error {
 		servers = append(servers, server)
 	}
 
-	time.Sleep(500 * time.Millisecond)
+	// time.Sleep(500 * time.Millisecond)
 
 	// start cometbft nodes
 
@@ -79,7 +79,7 @@ func mainCore(ctx context.Context) error {
 		cmd.Stderr = os.Stderr
 
 		go func() {
-			wait := time.Duration(rand.IntN(20000)) * time.Millisecond
+			wait := time.Duration(rand.IntN(6000)) * time.Millisecond // 20000
 			fmt.Printf("waiting to start node %v: %v\n", dir, wait)
 			select {
 			case <-ctx.Done():
