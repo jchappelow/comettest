@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"os/signal"
 	"path/filepath"
+	"strings"
 	"syscall"
 	"time"
 
@@ -32,6 +33,31 @@ func main() {
 		os.Exit(1)
 	}
 	os.Exit(0)
+}
+
+type prefixWriter struct {
+	prefix string
+	writer *os.File
+}
+
+func (pw *prefixWriter) Write(b []byte) (int, error) {
+	lines := strings.Split(string(b), "\n")
+	for i, line := range lines {
+		if line == "" && i == len(lines)-1 {
+			// Don't write the last empty line caused by split on newline
+			break
+		}
+		// Write the prefixed line to the underlying writer
+		_, err := fmt.Fprintf(pw.writer, "%s%s\n", pw.prefix, line)
+		if err != nil {
+			return 0, err
+		}
+	}
+	return len(b), nil
+}
+
+func (p *prefixWriter) Fd() uintptr {
+	return p.writer.Fd()
 }
 
 func mainCore(ctx context.Context) error {
@@ -75,11 +101,11 @@ func mainCore(ctx context.Context) error {
 	for _, dir := range dbDirs {
 		fullDbDir := filepath.Join(pwd, dir)
 		cmd := exec.CommandContext(ctx, "cometbft", "start", "--home", fullDbDir)
-		cmd.Stdout = os.Stdout
-		cmd.Stderr = os.Stderr
+		cmd.Stdout = os.Stdout // &prefixWriter{prefix: "[" + dir + "] ", writer: os.Stdout}
+		cmd.Stderr = os.Stderr // &prefixWriter{prefix: "[" + dir + "] ", writer: os.Stderr}
 
 		go func() {
-			wait := time.Duration(rand.IntN(6000)) * time.Millisecond // 20000
+			wait := time.Duration(rand.IntN(2000)) * time.Millisecond // 20000
 			fmt.Printf("waiting to start node %v: %v\n", dir, wait)
 			select {
 			case <-ctx.Done():
