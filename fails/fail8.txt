@@ -1,0 +1,523 @@
+ jon  monkey-cube  @GH  jchappelow  comettest   main  3✎  1+  $  go run ./multi/main.go 
+starting app servers
+started app: listening on 0.0.0.0:26658 / db in n0
+started app: listening on 0.0.0.0:26758 / db in n1
+started app: listening on 0.0.0.0:26858 / db in n2
+started app: listening on 0.0.0.0:26958 / db in n3
+started app: listening on 0.0.0.0:36958 / db in n3x
+starting cometbft nodes
+waiting to start node n0: 4ms
+waiting to start node n2: 1ms
+waiting to start node n3x: 7ms
+waiting to start node n3: 9ms
+waiting to start node n1: 6ms
+/home/jon/go/bin/cometbft start --home /home/jon/github/jchappelow/comettest/n2
+cometbft n2: 438032/home/jon/go/bin/cometbft start --home /home/jon/github/jchappelow/comettest/n0
+cometbft n0: 438038/home/jon/go/bin/cometbft start --home /home/jon/github/jchappelow/comettest/n1
+cometbft n1: 438044/home/jon/go/bin/cometbft start --home /home/jon/github/jchappelow/comettest/n3x
+cometbft n3x: 438045/home/jon/go/bin/cometbft start --home /home/jon/github/jchappelow/comettest/n3
+cometbft n3: 438063I[2024-09-16|23:38:41.590] service start                                module=proxy msg="Starting multiAppConn service" impl=multiAppConn
+I[2024-09-16|23:38:41.590] service start                                module=abci-client connection=query msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.590] service start                                module=abci-client connection=snapshot msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.590] service start                                module=abci-client connection=mempool msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.591] service start                                module=abci-client connection=consensus msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.591] service start                                module=events msg="Starting EventBus service" impl=EventBus
+I[2024-09-16|23:38:41.591] service start                                module=pubsub msg="Starting PubSub service" impl=PubSub
+I[2024-09-16|23:38:41.592] service start                                module=proxy msg="Starting multiAppConn service" impl=multiAppConn
+I[2024-09-16|23:38:41.592] service start                                module=abci-client connection=query msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.592] service start                                module=abci-client connection=snapshot msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.592] service start                                module=abci-client connection=mempool msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.592] service start                                module=abci-client connection=consensus msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.593] service start                                module=events msg="Starting EventBus service" impl=EventBus
+I[2024-09-16|23:38:41.593] service start                                module=pubsub msg="Starting PubSub service" impl=PubSub
+I[2024-09-16|23:38:41.597] service start                                module=proxy msg="Starting multiAppConn service" impl=multiAppConn
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=query msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=snapshot msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=mempool msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=consensus msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] service start                                module=events msg="Starting EventBus service" impl=EventBus
+I[2024-09-16|23:38:41.597] service start                                module=pubsub msg="Starting PubSub service" impl=PubSub
+I[2024-09-16|23:38:41.597] service start                                module=proxy msg="Starting multiAppConn service" impl=multiAppConn
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=query msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] service start                                module=txindex msg="Starting IndexerService service" impl=IndexerService
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=snapshot msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] service start                                module=abci-client connection=mempool msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.597] ABCI Handshake App Info                      module=consensus height=0 hash=0000000000000000 software-version=2.0.0 protocol-version=1
+I[2024-09-16|23:38:41.598] ABCI Replay Blocks                           module=consensus appHeight=0 storeHeight=0 stateHeight=0
+I[2024-09-16|23:38:41.598] service start                                module=abci-client connection=consensus msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.598] service start                                module=events msg="Starting EventBus service" impl=EventBus
+I[2024-09-16|23:38:41.598] service start                                module=pubsub msg="Starting PubSub service" impl=PubSub
+I[2024-09-16|23:38:41.599] service start                                module=proxy msg="Starting multiAppConn service" impl=multiAppConn
+I[2024-09-16|23:38:41.599] service start                                module=abci-client connection=query msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.599] service start                                module=abci-client connection=snapshot msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.599] service start                                module=abci-client connection=mempool msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.599] service start                                module=abci-client connection=consensus msg="Starting socketClient service" impl=socketClient
+I[2024-09-16|23:38:41.599] service start                                module=events msg="Starting EventBus service" impl=EventBus
+I[2024-09-16|23:38:41.599] service start                                module=pubsub msg="Starting PubSub service" impl=PubSub
+I[2024-09-16|23:38:41.599] Completed ABCI Handshake - CometBFT and App are synced module=consensus appHeight=0 appHash=0000000000000000
+I[2024-09-16|23:38:41.599] Version info                                 module=main tendermint_version=0.38.12 abci=2.0.0 block=11 p2p=8 commit_hash=
+I[2024-09-16|23:38:41.599] This node is a validator                     module=consensus addr=E4D12352509167A4B867CD35D9FC4DB769B1B049 pubKey=PubKeyEd25519{F2CEF6A2C700278FD3A9254AD7968DDA6D75430AE035709AD5C37EFD1C68C110}
+I[2024-09-16|23:38:41.600] service start                                module=txindex msg="Starting IndexerService service" impl=IndexerService
+I[2024-09-16|23:38:41.600] ABCI Handshake App Info                      module=consensus height=0 hash=0000000000000000 software-version=2.0.0 protocol-version=1
+I[2024-09-16|23:38:41.600] ABCI Replay Blocks                           module=consensus appHeight=0 storeHeight=0 stateHeight=0
+I[2024-09-16|23:38:41.601] Completed ABCI Handshake - CometBFT and App are synced module=consensus appHeight=0 appHash=0000000000000000
+I[2024-09-16|23:38:41.601] Version info                                 module=main tendermint_version=0.38.12 abci=2.0.0 block=11 p2p=8 commit_hash=
+I[2024-09-16|23:38:41.601] This node is a validator                     module=consensus addr=E3F5663C0298AF4CC666AC901CABC1C1F8324631 pubKey=PubKeyEd25519{7B21AFA767B3D55DC0FE5B2410120ED4F068AD7C3FE543D608FE626A10CD7C6B}
+I[2024-09-16|23:38:41.604] service start                                module=txindex msg="Starting IndexerService service" impl=IndexerService
+I[2024-09-16|23:38:41.605] ABCI Handshake App Info                      module=consensus height=0 hash=0000000000000000 software-version=2.0.0 protocol-version=1
+I[2024-09-16|23:38:41.605] ABCI Replay Blocks                           module=consensus appHeight=0 storeHeight=0 stateHeight=0
+I[2024-09-16|23:38:41.606] service start                                module=txindex msg="Starting IndexerService service" impl=IndexerService
+I[2024-09-16|23:38:41.606] ABCI Handshake App Info                      module=consensus height=0 hash=0000000000000000 software-version=2.0.0 protocol-version=1
+I[2024-09-16|23:38:41.606] ABCI Replay Blocks                           module=consensus appHeight=0 storeHeight=0 stateHeight=0
+I[2024-09-16|23:38:41.606] Completed ABCI Handshake - CometBFT and App are synced module=consensus appHeight=0 appHash=0000000000000000
+I[2024-09-16|23:38:41.606] Version info                                 module=main tendermint_version=0.38.12 abci=2.0.0 block=11 p2p=8 commit_hash=
+I[2024-09-16|23:38:41.606] This node is a validator                     module=consensus addr=83FDACDBEF8E5F3EF270F447BA59F8C458C35B3D pubKey=PubKeyEd25519{83DF0BDB1C535AC01131F69417AE99B6E0903340B9F19067A50A42CFE413FBB0}
+I[2024-09-16|23:38:41.607] service start                                module=txindex msg="Starting IndexerService service" impl=IndexerService
+I[2024-09-16|23:38:41.607] ABCI Handshake App Info                      module=consensus height=0 hash=0000000000000000 software-version=2.0.0 protocol-version=1
+I[2024-09-16|23:38:41.607] ABCI Replay Blocks                           module=consensus appHeight=0 storeHeight=0 stateHeight=0
+I[2024-09-16|23:38:41.608] Completed ABCI Handshake - CometBFT and App are synced module=consensus appHeight=0 appHash=0000000000000000
+I[2024-09-16|23:38:41.608] Version info                                 module=main tendermint_version=0.38.12 abci=2.0.0 block=11 p2p=8 commit_hash=
+I[2024-09-16|23:38:41.608] This node is a validator                     module=consensus addr=BD7C8829B82ECCC7BF3CB24C96E720380983B697 pubKey=PubKeyEd25519{DFC0201E29898BBC1DF6CD033555F93B998A0A994323130D5A187B925D6C5451}
+I[2024-09-16|23:38:41.608] Completed ABCI Handshake - CometBFT and App are synced module=consensus appHeight=0 appHash=0000000000000000
+I[2024-09-16|23:38:41.609] Version info                                 module=main tendermint_version=0.38.12 abci=2.0.0 block=11 p2p=8 commit_hash=
+I[2024-09-16|23:38:41.609] This node is a validator                     module=consensus addr=BD7C8829B82ECCC7BF3CB24C96E720380983B697 pubKey=PubKeyEd25519{DFC0201E29898BBC1DF6CD033555F93B998A0A994323130D5A187B925D6C5451}
+I[2024-09-16|23:38:41.609] P2P Node ID                                  module=p2p ID=3df4de0b23eb6cd27d806313d6241698a9d953fa file=/home/jon/github/jchappelow/comettest/n2/config/node_key.json
+I[2024-09-16|23:38:41.609] Adding persistent peers                      module=p2p addrs="[cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.4:26656]"
+I[2024-09-16|23:38:41.609] Adding unconditional peer ids                module=p2p ids=[]
+I[2024-09-16|23:38:41.609] Add our address to book                      module=p2p book=/home/jon/github/jchappelow/comettest/n2/config/addrbook.json addr=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.3:26656
+I[2024-09-16|23:38:41.609] service start                                module=main msg="Starting Node service" impl=Node
+I[2024-09-16|23:38:41.609] service start                                module=p2p msg="Starting P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:38:41.609] service start                                module=mempool msg="Starting Mempool service" impl=Mempool
+I[2024-09-16|23:38:41.609] service start                                module=blocksync msg="Starting Reactor service" impl=Reactor
+I[2024-09-16|23:38:41.609] service start                                module=blocksync msg="Starting BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:41.609] service start                                module=consensus msg="Starting Consensus service" impl=ConsensusReactor
+I[2024-09-16|23:38:41.609] Reactor                                      module=consensus waitSync=true
+I[2024-09-16|23:38:41.609] service start                                module=evidence msg="Starting Evidence service" impl=Evidence
+I[2024-09-16|23:38:41.609] service start                                module=statesync msg="Starting StateSync service" impl=StateSync
+I[2024-09-16|23:38:41.609] Saving AddrBook to file                      module=p2p book=/home/jon/github/jchappelow/comettest/n2/config/addrbook.json size=2
+I[2024-09-16|23:38:41.609] serve                                        module=rpc-server msg="Starting RPC HTTP server on 127.0.0.3:26657"
+I[2024-09-16|23:38:41.610] Started node                                 module=main nodeInfo="{ProtocolVersion:{P2P:8 Block:11 App:1} DefaultNodeID:3df4de0b23eb6cd27d806313d6241698a9d953fa ListenAddr:tcp://127.0.0.3:26656 Network:chain-eMmIkl Version:0.38.12 Channels:402021222330386061 Moniker:node2 Other:{TxIndex:on RPCAddress:tcp://127.0.0.3:26657}}"
+I[2024-09-16|23:38:41.611] P2P Node ID                                  module=p2p ID=1bb55f8186128b61354d2b1967639cb6ead32757 file=/home/jon/github/jchappelow/comettest/n0/config/node_key.json
+I[2024-09-16|23:38:41.611] Adding persistent peers                      module=p2p addrs="[eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.4:36656 cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656]"
+I[2024-09-16|23:38:41.611] Adding unconditional peer ids                module=p2p ids=[]
+I[2024-09-16|23:38:41.611] Add our address to book                      module=p2p book=/home/jon/github/jchappelow/comettest/n0/config/addrbook.json addr=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:26656
+I[2024-09-16|23:38:41.611] service start                                module=main msg="Starting Node service" impl=Node
+I[2024-09-16|23:38:41.611] service start                                module=p2p msg="Starting P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:38:41.611] service start                                module=blocksync msg="Starting Reactor service" impl=Reactor
+I[2024-09-16|23:38:41.611] service start                                module=blocksync msg="Starting BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:41.611] service start                                module=consensus msg="Starting Consensus service" impl=ConsensusReactor
+I[2024-09-16|23:38:41.611] Reactor                                      module=consensus waitSync=true
+I[2024-09-16|23:38:41.611] service start                                module=evidence msg="Starting Evidence service" impl=Evidence
+I[2024-09-16|23:38:41.611] service start                                module=statesync msg="Starting StateSync service" impl=StateSync
+I[2024-09-16|23:38:41.611] service start                                module=mempool msg="Starting Mempool service" impl=Mempool
+I[2024-09-16|23:38:41.611] Saving AddrBook to file                      module=p2p book=/home/jon/github/jchappelow/comettest/n0/config/addrbook.json size=2
+I[2024-09-16|23:38:41.611] serve                                        module=rpc-server msg="Starting RPC HTTP server on 127.0.0.1:26657"
+I[2024-09-16|23:38:41.612] Started node                                 module=main nodeInfo="{ProtocolVersion:{P2P:8 Block:11 App:1} DefaultNodeID:1bb55f8186128b61354d2b1967639cb6ead32757 ListenAddr:tcp://127.0.0.1:26656 Network:chain-eMmIkl Version:0.38.12 Channels:402021222330386061 Moniker:node0 Other:{TxIndex:on RPCAddress:tcp://127.0.0.1:26657}}"
+I[2024-09-16|23:38:41.614] P2P Node ID                                  module=p2p ID=cc4c2c39e90d848b03b46c03d84990912a407e1a file=/home/jon/github/jchappelow/comettest/n1/config/node_key.json
+I[2024-09-16|23:38:41.614] Adding persistent peers                      module=p2p addrs="[1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:26656 3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.3:26656]"
+I[2024-09-16|23:38:41.614] Adding unconditional peer ids                module=p2p ids=[]
+I[2024-09-16|23:38:41.614] Add our address to book                      module=p2p book=/home/jon/github/jchappelow/comettest/n1/config/addrbook.json addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:41.614] service start                                module=main msg="Starting Node service" impl=Node
+I[2024-09-16|23:38:41.614] service start                                module=p2p msg="Starting P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:38:41.615] service start                                module=statesync msg="Starting StateSync service" impl=StateSync
+I[2024-09-16|23:38:41.615] service start                                module=mempool msg="Starting Mempool service" impl=Mempool
+I[2024-09-16|23:38:41.615] service start                                module=blocksync msg="Starting Reactor service" impl=Reactor
+I[2024-09-16|23:38:41.615] service start                                module=blocksync msg="Starting BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:41.615] service start                                module=consensus msg="Starting Consensus service" impl=ConsensusReactor
+I[2024-09-16|23:38:41.615] Reactor                                      module=consensus waitSync=true
+I[2024-09-16|23:38:41.615] service start                                module=evidence msg="Starting Evidence service" impl=Evidence
+I[2024-09-16|23:38:41.615] Saving AddrBook to file                      module=p2p book=/home/jon/github/jchappelow/comettest/n1/config/addrbook.json size=2
+I[2024-09-16|23:38:41.615] serve                                        module=rpc-server msg="Starting RPC HTTP server on 127.0.0.2:26657"
+I[2024-09-16|23:38:41.616] Started node                                 module=main nodeInfo="{ProtocolVersion:{P2P:8 Block:11 App:1} DefaultNodeID:cc4c2c39e90d848b03b46c03d84990912a407e1a ListenAddr:tcp://127.0.0.2:26656 Network:chain-eMmIkl Version:0.38.12 Channels:402021222330386061 Moniker:node1 Other:{TxIndex:on RPCAddress:tcp://127.0.0.2:26657}}"
+I[2024-09-16|23:38:41.616] P2P Node ID                                  module=p2p ID=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b file=/home/jon/github/jchappelow/comettest/n3/config/node_key.json
+I[2024-09-16|23:38:41.616] P2P Node ID                                  module=p2p ID=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b file=/home/jon/github/jchappelow/comettest/n3x/config/node_key.json
+I[2024-09-16|23:38:41.616] Adding persistent peers                      module=p2p addrs=[3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.3:26656]
+I[2024-09-16|23:38:41.616] Adding persistent peers                      module=p2p addrs="[1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:26656 cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656]"
+I[2024-09-16|23:38:41.616] Adding unconditional peer ids                module=p2p ids=[]
+I[2024-09-16|23:38:41.616] Adding unconditional peer ids                module=p2p ids=[]
+I[2024-09-16|23:38:41.616] Add our address to book                      module=p2p book=/home/jon/github/jchappelow/comettest/n3x/config/addrbook.json addr=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.4:36656
+I[2024-09-16|23:38:41.616] Add our address to book                      module=p2p book=/home/jon/github/jchappelow/comettest/n3/config/addrbook.json addr=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.4:26656
+I[2024-09-16|23:38:41.616] service start                                module=main msg="Starting Node service" impl=Node
+I[2024-09-16|23:38:41.616] service start                                module=main msg="Starting Node service" impl=Node
+I[2024-09-16|23:38:41.617] service start                                module=p2p msg="Starting P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:38:41.617] service start                                module=consensus msg="Starting Consensus service" impl=ConsensusReactor
+I[2024-09-16|23:38:41.617] Reactor                                      module=consensus waitSync=true
+I[2024-09-16|23:38:41.617] service start                                module=evidence msg="Starting Evidence service" impl=Evidence
+I[2024-09-16|23:38:41.617] service start                                module=statesync msg="Starting StateSync service" impl=StateSync
+I[2024-09-16|23:38:41.617] service start                                module=mempool msg="Starting Mempool service" impl=Mempool
+I[2024-09-16|23:38:41.617] service start                                module=blocksync msg="Starting Reactor service" impl=Reactor
+I[2024-09-16|23:38:41.617] service start                                module=blocksync msg="Starting BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:41.617] service start                                module=p2p msg="Starting P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:38:41.617] service start                                module=statesync msg="Starting StateSync service" impl=StateSync
+I[2024-09-16|23:38:41.617] Saving AddrBook to file                      module=p2p book=/home/jon/github/jchappelow/comettest/n3x/config/addrbook.json size=2
+I[2024-09-16|23:38:41.617] service start                                module=mempool msg="Starting Mempool service" impl=Mempool
+I[2024-09-16|23:38:41.617] serve                                        module=rpc-server msg="Starting RPC HTTP server on 127.0.0.4:36657"
+I[2024-09-16|23:38:41.617] service start                                module=blocksync msg="Starting Reactor service" impl=Reactor
+I[2024-09-16|23:38:41.617] service start                                module=blocksync msg="Starting BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:41.617] service start                                module=consensus msg="Starting Consensus service" impl=ConsensusReactor
+I[2024-09-16|23:38:41.617] Reactor                                      module=consensus waitSync=true
+I[2024-09-16|23:38:41.617] service start                                module=evidence msg="Starting Evidence service" impl=Evidence
+I[2024-09-16|23:38:41.617] serve                                        module=rpc-server msg="Starting RPC HTTP server on 127.0.0.4:26657"
+I[2024-09-16|23:38:41.617] Saving AddrBook to file                      module=p2p book=/home/jon/github/jchappelow/comettest/n3/config/addrbook.json size=1
+I[2024-09-16|23:38:41.617] Started node                                 module=main nodeInfo="{ProtocolVersion:{P2P:8 Block:11 App:1} DefaultNodeID:eb0852d124a184f65b37ff6e9ebcef4818c7eb0b ListenAddr:tcp://127.0.0.4:36656 Network:chain-eMmIkl Version:0.38.12 Channels:402021222330386061 Moniker:node3 Other:{TxIndex:on RPCAddress:tcp://127.0.0.4:36657}}"
+I[2024-09-16|23:38:41.618] Started node                                 module=main nodeInfo="{ProtocolVersion:{P2P:8 Block:11 App:1} DefaultNodeID:eb0852d124a184f65b37ff6e9ebcef4818c7eb0b ListenAddr:tcp://127.0.0.4:26656 Network:chain-eMmIkl Version:0.38.12 Channels:402021222330386061 Moniker:node3 Other:{TxIndex:on RPCAddress:tcp://127.0.0.4:26657}}"
+I[2024-09-16|23:38:41.838] service start                                module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Starting Peer service" impl="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}"
+I[2024-09-16|23:38:41.838] service start                                module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Starting MConnection service" impl=MConn{127.0.0.2:26656}
+I[2024-09-16|23:38:41.838] service start                                module=p2p peer=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:52350 msg="Starting Peer service" impl="Peer{MConn{127.0.0.1:52350} 1bb55f8186128b61354d2b1967639cb6ead32757 in}"
+I[2024-09-16|23:38:41.838] service start                                module=p2p peer=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:52350 msg="Starting MConnection service" impl=MConn{127.0.0.1:52350}
+I[2024-09-16|23:38:42.609] Time to switch to consensus reactor!         module=blocksync height=1
+I[2024-09-16|23:38:42.609] service stop                                 module=blocksync msg="Stopping BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:42.609] SwitchToConsensus                            module=consensus 
+I[2024-09-16|23:38:42.610] service start                                module=consensus msg="Starting State service" impl=ConsensusState
+I[2024-09-16|23:38:42.610] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n2/data/cs.wal/wal msg="Starting baseWAL service" impl=baseWAL
+I[2024-09-16|23:38:42.611] Time to switch to consensus reactor!         module=blocksync height=1
+I[2024-09-16|23:38:42.611] service stop                                 module=blocksync msg="Stopping BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:42.611] SwitchToConsensus                            module=consensus 
+I[2024-09-16|23:38:42.611] service start                                module=consensus msg="Starting State service" impl=ConsensusState
+I[2024-09-16|23:38:42.612] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n2/data/cs.wal/wal msg="Starting Group service" impl=Group
+I[2024-09-16|23:38:42.612] service start                                module=consensus msg="Starting TimeoutTicker service" impl=TimeoutTicker
+I[2024-09-16|23:38:42.612] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n2/data/cs.wal/wal height=1 min=0 max=0
+I[2024-09-16|23:38:42.612] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n0/data/cs.wal/wal msg="Starting baseWAL service" impl=baseWAL
+I[2024-09-16|23:38:42.612] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n2/data/cs.wal/wal height=0 min=0 max=0
+I[2024-09-16|23:38:42.612] Found                                        module=consensus wal=/home/jon/github/jchappelow/comettest/n2/data/cs.wal/wal height=0 index=0
+I[2024-09-16|23:38:42.612] Catchup by replaying consensus messages      module=consensus height=1
+I[2024-09-16|23:38:42.612] Replay: Done                                 module=consensus 
+I[2024-09-16|23:38:42.612] Timed out                                    module=consensus dur=-5.027629ms height=1 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:42.613] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n0/data/cs.wal/wal msg="Starting Group service" impl=Group
+I[2024-09-16|23:38:42.613] service start                                module=consensus msg="Starting TimeoutTicker service" impl=TimeoutTicker
+I[2024-09-16|23:38:42.613] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n0/data/cs.wal/wal height=1 min=0 max=0
+I[2024-09-16|23:38:42.613] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n0/data/cs.wal/wal height=0 min=0 max=0
+I[2024-09-16|23:38:42.613] Found                                        module=consensus wal=/home/jon/github/jchappelow/comettest/n0/data/cs.wal/wal height=0 index=0
+I[2024-09-16|23:38:42.613] Catchup by replaying consensus messages      module=consensus height=1
+I[2024-09-16|23:38:42.613] Replay: Done                                 module=consensus 
+I[2024-09-16|23:38:42.613] Timed out                                    module=consensus dur=-3.356718ms height=1 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:42.616] Time to switch to consensus reactor!         module=blocksync height=1
+I[2024-09-16|23:38:42.616] service stop                                 module=blocksync msg="Stopping BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:42.616] SwitchToConsensus                            module=consensus 
+I[2024-09-16|23:38:42.616] service start                                module=consensus msg="Starting State service" impl=ConsensusState
+I[2024-09-16|23:38:42.616] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal msg="Starting baseWAL service" impl=baseWAL
+I[2024-09-16|23:38:42.617] Time to switch to consensus reactor!         module=blocksync height=1
+I[2024-09-16|23:38:42.617] service stop                                 module=blocksync msg="Stopping BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:42.617] SwitchToConsensus                            module=consensus 
+I[2024-09-16|23:38:42.617] service start                                module=consensus msg="Starting State service" impl=ConsensusState
+I[2024-09-16|23:38:42.617] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal msg="Starting Group service" impl=Group
+I[2024-09-16|23:38:42.617] service start                                module=consensus msg="Starting TimeoutTicker service" impl=TimeoutTicker
+I[2024-09-16|23:38:42.617] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal height=1 min=0 max=0
+I[2024-09-16|23:38:42.617] Time to switch to consensus reactor!         module=blocksync height=1
+I[2024-09-16|23:38:42.617] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal height=0 min=0 max=0
+I[2024-09-16|23:38:42.617] service stop                                 module=blocksync msg="Stopping BlockPool service" impl=BlockPool
+I[2024-09-16|23:38:42.617] SwitchToConsensus                            module=consensus 
+I[2024-09-16|23:38:42.617] Found                                        module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal height=0 index=0
+I[2024-09-16|23:38:42.617] Catchup by replaying consensus messages      module=consensus height=1
+I[2024-09-16|23:38:42.617] Replay: Done                                 module=consensus 
+I[2024-09-16|23:38:42.617] service start                                module=consensus msg="Starting State service" impl=ConsensusState
+I[2024-09-16|23:38:42.617] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n3/data/cs.wal/wal msg="Starting baseWAL service" impl=baseWAL
+I[2024-09-16|23:38:42.617] Timed out                                    module=consensus dur=-4.003781ms height=1 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:42.617] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n3x/data/cs.wal/wal msg="Starting baseWAL service" impl=baseWAL
+I[2024-09-16|23:38:42.618] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n3/data/cs.wal/wal msg="Starting Group service" impl=Group
+I[2024-09-16|23:38:42.618] service start                                module=consensus msg="Starting TimeoutTicker service" impl=TimeoutTicker
+I[2024-09-16|23:38:42.618] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n3/data/cs.wal/wal height=1 min=0 max=0
+I[2024-09-16|23:38:42.618] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n3/data/cs.wal/wal height=0 min=0 max=0
+I[2024-09-16|23:38:42.618] Found                                        module=consensus wal=/home/jon/github/jchappelow/comettest/n3/data/cs.wal/wal height=0 index=0
+I[2024-09-16|23:38:42.618] Catchup by replaying consensus messages      module=consensus height=1
+I[2024-09-16|23:38:42.618] Replay: Done                                 module=consensus 
+I[2024-09-16|23:38:42.618] Timed out                                    module=consensus dur=-2.573542ms height=1 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:42.619] service start                                module=consensus wal=/home/jon/github/jchappelow/comettest/n3x/data/cs.wal/wal msg="Starting Group service" impl=Group
+I[2024-09-16|23:38:42.619] service start                                module=consensus msg="Starting TimeoutTicker service" impl=TimeoutTicker
+I[2024-09-16|23:38:42.619] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n3x/data/cs.wal/wal height=1 min=0 max=0
+I[2024-09-16|23:38:42.619] Searching for height                         module=consensus wal=/home/jon/github/jchappelow/comettest/n3x/data/cs.wal/wal height=0 min=0 max=0
+I[2024-09-16|23:38:42.619] Found                                        module=consensus wal=/home/jon/github/jchappelow/comettest/n3x/data/cs.wal/wal height=0 index=0
+I[2024-09-16|23:38:42.619] Catchup by replaying consensus messages      module=consensus height=1
+I[2024-09-16|23:38:42.619] Replay: Done                                 module=consensus 
+I[2024-09-16|23:38:42.619] Timed out                                    module=consensus dur=-3.226454ms height=1 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:42.621] received proposal                            module=consensus proposal="Proposal{1/0 (CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD:1:AF35D157F66D, -1) 10D570B36FC4 @ 2024-09-17T04:38:42.619187958Z}" proposer=83FDACDBEF8E5F3EF270F447BA59F8C458C35B3D
+I[2024-09-16|23:38:42.621] received complete proposal block             module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:42.712] service start                                module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Starting Peer service" impl="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}"
+I[2024-09-16|23:38:42.712] service start                                module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Starting MConnection service" impl=MConn{127.0.0.2:26656}
+I[2024-09-16|23:38:42.713] service start                                module=p2p peer=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.1:52352 msg="Starting Peer service" impl="Peer{MConn{127.0.0.1:52352} 3df4de0b23eb6cd27d806313d6241698a9d953fa in}"
+I[2024-09-16|23:38:42.713] service start                                module=p2p peer=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.1:52352 msg="Starting MConnection service" impl=MConn{127.0.0.1:52352}
+I[2024-09-16|23:38:42.813] received proposal                            module=consensus proposal="Proposal{1/0 (CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD:1:AF35D157F66D, -1) 10D570B36FC4 @ 2024-09-17T04:38:42.619187958Z}" proposer=83FDACDBEF8E5F3EF270F447BA59F8C458C35B3D
+I[2024-09-16|23:38:42.813] received complete proposal block             module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:42.843] received proposal                            module=consensus proposal="Proposal{1/0 (CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD:1:AF35D157F66D, -1) 10D570B36FC4 @ 2024-09-17T04:38:42.619187958Z}" proposer=83FDACDBEF8E5F3EF270F447BA59F8C458C35B3D
+I[2024-09-16|23:38:42.843] received complete proposal block             module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:43.182] service start                                module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.4:26656 msg="Starting Peer service" impl="Peer{MConn{127.0.0.4:26656} eb0852d124a184f65b37ff6e9ebcef4818c7eb0b out}"
+I[2024-09-16|23:38:43.182] service start                                module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.4:26656 msg="Starting MConnection service" impl=MConn{127.0.0.4:26656}
+I[2024-09-16|23:38:43.182] service start                                module=p2p peer=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.1:43304 msg="Starting Peer service" impl="Peer{MConn{127.0.0.1:43304} 3df4de0b23eb6cd27d806313d6241698a9d953fa in}"
+I[2024-09-16|23:38:43.182] service start                                module=p2p peer=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.1:43304 msg="Starting MConnection service" impl=MConn{127.0.0.1:43304}
+I[2024-09-16|23:38:43.245] finalizing commit of block                   module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:43.246] finalizing commit of block                   module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:43.248] finalized block                              module=state height=1 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.248] executed block                               module=state height=1 app_hash=0000000000000000
+I[2024-09-16|23:38:43.248] finalized block                              module=state height=1 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.248] executed block                               module=state height=1 app_hash=0000000000000000
+I[2024-09-16|23:38:43.249] committed state                              module=state height=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.250] committed state                              module=state height=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.252] indexed block events                         module=txindex height=1
+I[2024-09-16|23:38:43.252] indexed block events                         module=txindex height=1
+I[2024-09-16|23:38:43.346] finalizing commit of block                   module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:43.350] finalized block                              module=state height=1 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.350] executed block                               module=state height=1 app_hash=0000000000000000
+I[2024-09-16|23:38:43.351] committed state                              module=state height=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.352] indexed block events                         module=txindex height=1
+I[2024-09-16|23:38:43.385] commit is for a block we do not know about; set ProposalBlock=nil module=consensus height=1 commit_round=0 proposal= commit=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:43.388] service start                                module=p2p peer=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:26656 msg="Starting Peer service" impl="Peer{MConn{127.0.0.1:26656} 1bb55f8186128b61354d2b1967639cb6ead32757 out}"
+I[2024-09-16|23:38:43.388] service start                                module=p2p peer=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:26656 msg="Starting MConnection service" impl=MConn{127.0.0.1:26656}
+I[2024-09-16|23:38:43.388] service start                                module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.1:43672 msg="Starting Peer service" impl="Peer{MConn{127.0.0.1:43672} eb0852d124a184f65b37ff6e9ebcef4818c7eb0b in}"
+I[2024-09-16|23:38:43.388] service start                                module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.1:43672 msg="Starting MConnection service" impl=MConn{127.0.0.1:43672}
+I[2024-09-16|23:38:43.569] service start                                module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Starting Peer service" impl="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}"
+I[2024-09-16|23:38:43.569] service start                                module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Starting MConnection service" impl=MConn{127.0.0.2:26656}
+I[2024-09-16|23:38:43.569] service start                                module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.1:52356 msg="Starting Peer service" impl="Peer{MConn{127.0.0.1:52356} eb0852d124a184f65b37ff6e9ebcef4818c7eb0b in}"
+I[2024-09-16|23:38:43.569] service start                                module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.1:52356 msg="Starting MConnection service" impl=MConn{127.0.0.1:52356}
+I[2024-09-16|23:38:43.686] received complete proposal block             module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:43.686] finalizing commit of block                   module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:43.688] finalized block                              module=state height=1 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.688] executed block                               module=state height=1 app_hash=0000000000000000
+I[2024-09-16|23:38:43.689] committed state                              module=state height=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.690] indexed block events                         module=txindex height=1
+I[2024-09-16|23:38:43.692] commit is for a block we do not know about; set ProposalBlock=nil module=consensus height=1 commit_round=0 proposal= commit=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:43.770] received complete proposal block             module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD
+I[2024-09-16|23:38:43.770] finalizing commit of block                   module=consensus height=1 hash=CAE7B68AE3B23471D06A0EDC4518A1F4E262A6D68D1AFEEA2C8BC64392D2A8AD root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:43.772] finalized block                              module=state height=1 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.772] executed block                               module=state height=1 app_hash=0000000000000000
+I[2024-09-16|23:38:43.773] committed state                              module=state height=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:43.775] indexed block events                         module=txindex height=1
+I[2024-09-16|23:38:44.245] Timed out                                    module=consensus dur=995.163886ms height=2 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:44.246] Timed out                                    module=consensus dur=994.610903ms height=2 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:44.347] Timed out                                    module=consensus dur=995.07728ms height=2 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:44.386] Timed out                                    module=consensus dur=696.182444ms height=2 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:44.389] received proposal                            module=consensus proposal="Proposal{2/0 (8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4:1:C1B32D083E5D, -1) E3C66C92ADEC @ 2024-09-17T04:38:44.387863062Z}" proposer=BD7C8829B82ECCC7BF3CB24C96E720380983B697
+I[2024-09-16|23:38:44.390] received complete proposal block             module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4
+I[2024-09-16|23:38:44.489] received proposal                            module=consensus proposal="Proposal{2/0 (8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4:1:C1B32D083E5D, -1) E3C66C92ADEC @ 2024-09-17T04:38:44.387863062Z}" proposer=BD7C8829B82ECCC7BF3CB24C96E720380983B697
+I[2024-09-16|23:38:44.490] received complete proposal block             module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4
+I[2024-09-16|23:38:44.593] received proposal                            module=consensus proposal="Proposal{2/0 (8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4:1:C1B32D083E5D, -1) E3C66C92ADEC @ 2024-09-17T04:38:44.387863062Z}" proposer=BD7C8829B82ECCC7BF3CB24C96E720380983B697
+I[2024-09-16|23:38:44.593] received complete proposal block             module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4
+I[2024-09-16|23:38:44.692] Timed out                                    module=consensus dur=918.049248ms height=2 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:44.695] received proposal                            module=consensus proposal="Proposal{2/0 (9F908C49D0B79C5A1AEE89A5AC57B1EEB56C9441DB7055F825CA35C261CCAC41:1:CE2639BF9E91, -1) A6C5A5ECEC47 @ 2024-09-17T04:38:44.693917245Z}" proposer=BD7C8829B82ECCC7BF3CB24C96E720380983B697
+I[2024-09-16|23:38:44.696] received complete proposal block             module=consensus height=2 hash=9F908C49D0B79C5A1AEE89A5AC57B1EEB56C9441DB7055F825CA35C261CCAC41
+I[2024-09-16|23:38:44.696] received proposal                            module=consensus proposal="Proposal{2/0 (8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4:1:C1B32D083E5D, -1) E3C66C92ADEC @ 2024-09-17T04:38:44.387863062Z}" proposer=BD7C8829B82ECCC7BF3CB24C96E720380983B697
+I[2024-09-16|23:38:44.696] received complete proposal block             module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4
+E[2024-09-16|23:38:44.700] found conflicting vote from ourselves; did you unsafe_reset a validator? module=consensus height=2 round=0 type=SIGNED_MSG_TYPE_PREVOTE
+E[2024-09-16|23:38:44.700] failed to process message                    module=consensus height=2 round=0 peer=cc4c2c39e90d848b03b46c03d84990912a407e1a msg_type=*consensus.VoteMessage err="conflicting votes from validator BD7C8829B82ECCC7BF3CB24C96E720380983B697"
+E[2024-09-16|23:38:44.796] failed to process message                    module=consensus height=2 round=0 peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b msg_type=*consensus.VoteMessage err="conflicting votes from validator BD7C8829B82ECCC7BF3CB24C96E720380983B697"
+E[2024-09-16|23:38:44.800] found conflicting vote from ourselves; did you unsafe_reset a validator? module=consensus height=2 round=0 type=SIGNED_MSG_TYPE_PREVOTE
+I[2024-09-16|23:38:44.800] finalizing commit of block                   module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4 root=0000000000000000 num_txs=0
+E[2024-09-16|23:38:44.800] failed to process message                    module=consensus height=2 round=0 peer=1bb55f8186128b61354d2b1967639cb6ead32757 msg_type=*consensus.VoteMessage err="conflicting votes from validator BD7C8829B82ECCC7BF3CB24C96E720380983B697"
+I[2024-09-16|23:38:44.800] finalizing commit of block                   module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:44.802] finalized block                              module=state height=2 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.802] executed block                               module=state height=2 app_hash=0000000000000000
+I[2024-09-16|23:38:44.803] finalized block                              module=state height=2 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.803] executed block                               module=state height=2 app_hash=0000000000000000
+I[2024-09-16|23:38:44.804] committed state                              module=state height=2 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.804] committed state                              module=state height=2 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.806] indexed block events                         module=txindex height=2
+I[2024-09-16|23:38:44.806] indexed block events                         module=txindex height=2
+I[2024-09-16|23:38:44.898] finalizing commit of block                   module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:44.899] finalizing commit of block                   module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:44.900] finalized block                              module=state height=2 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.900] executed block                               module=state height=2 app_hash=0000000000000000
+I[2024-09-16|23:38:44.901] finalized block                              module=state height=2 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.901] executed block                               module=state height=2 app_hash=0000000000000000
+I[2024-09-16|23:38:44.901] committed state                              module=state height=2 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.902] verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:44.902] committed state                              module=state height=2 block_app_hash=0000000000000000
+I[2024-09-16|23:38:44.904] indexed block events                         module=txindex height=2
+I[2024-09-16|23:38:44.904] indexed block events                         module=txindex height=2
+I[2024-09-16|23:38:44.998] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:44.998] received complete proposal block             module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4
+I[2024-09-16|23:38:44.999] finalizing commit of block                   module=consensus height=2 hash=8F957B75FD29148D8843CD98C9FB244FEF1C40A6F05F6BB13E5DFB9835BCD6F4 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:44.999] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.000] finalized block                              module=state height=2 num_txs_res=0 num_val_updates=0 block_app_hash=0000000000000000
+I[2024-09-16|23:38:45.000] executed block                               module=state height=2 app_hash=0000000000000000
+I[2024-09-16|23:38:45.001] committed state                              module=state height=2 block_app_hash=0000000000000000
+I[2024-09-16|23:38:45.002] indexed block events                         module=txindex height=2
+I[2024-09-16|23:38:45.100] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.100] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.100] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+E[2024-09-16|23:38:45.100] failed to process message                    module=consensus height=3 round=0 peer=cc4c2c39e90d848b03b46c03d84990912a407e1a msg_type=*consensus.VoteMessage err="conflicting votes from validator BD7C8829B82ECCC7BF3CB24C96E720380983B697"
+I[2024-09-16|23:38:45.100] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+E[2024-09-16|23:38:45.101] failed to process message                    module=consensus height=3 round=0 peer=1bb55f8186128b61354d2b1967639cb6ead32757 msg_type=*consensus.VoteMessage err="conflicting votes from validator BD7C8829B82ECCC7BF3CB24C96E720380983B697"
+E[2024-09-16|23:38:45.103] failed to process message                    module=consensus height=3 round=0 peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b msg_type=*consensus.VoteMessage err="conflicting votes from validator BD7C8829B82ECCC7BF3CB24C96E720380983B697"
+I[2024-09-16|23:38:45.200] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.200] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.200] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.201] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.301] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.301] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:45.801] Timed out                                    module=consensus dur=995.335528ms height=3 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:45.801] Timed out                                    module=consensus dur=994.894016ms height=3 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:45.898] Timed out                                    module=consensus dur=995.275125ms height=3 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:45.899] Timed out                                    module=consensus dur=995.205851ms height=3 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:45.900] Timed out                                    module=consensus dur=898.299372ms height=3 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:45.901] received proposal                            module=consensus proposal="Proposal{3/0 (9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230:1:C0D42A923DF9, -1) A037548F9754 @ 2024-09-17T04:38:45.900186261Z}" proposer=E3F5663C0298AF4CC666AC901CABC1C1F8324631
+I[2024-09-16|23:38:45.902] received complete proposal block             module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230
+I[2024-09-16|23:38:46.002] received proposal                            module=consensus proposal="Proposal{3/0 (9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230:1:C0D42A923DF9, -1) A037548F9754 @ 2024-09-17T04:38:45.900186261Z}" proposer=E3F5663C0298AF4CC666AC901CABC1C1F8324631
+I[2024-09-16|23:38:46.002] received complete proposal block             module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230
+I[2024-09-16|23:38:46.102] received proposal                            module=consensus proposal="Proposal{3/0 (9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230:1:C0D42A923DF9, -1) A037548F9754 @ 2024-09-17T04:38:45.900186261Z}" proposer=E3F5663C0298AF4CC666AC901CABC1C1F8324631
+I[2024-09-16|23:38:46.103] received complete proposal block             module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230
+I[2024-09-16|23:38:46.103] Check evidence: verified evidence of byzantine behavior module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 8F957B75FD29 6968374D79DB 000000000000 @ 2024-09-17T04:38:44.39080854Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PREVOTE(Prevote) 9F908C49D0B7 CA6EBBC61066 000000000000 @ 2024-09-17T04:38:44.697174972Z}}"
+I[2024-09-16|23:38:46.104] received proposal                            module=consensus proposal="Proposal{3/0 (9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230:1:C0D42A923DF9, -1) A037548F9754 @ 2024-09-17T04:38:45.900186261Z}" proposer=E3F5663C0298AF4CC666AC901CABC1C1F8324631
+I[2024-09-16|23:38:46.104] received complete proposal block             module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230
+I[2024-09-16|23:38:46.204] received proposal                            module=consensus proposal="Proposal{3/0 (9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230:1:C0D42A923DF9, -1) A037548F9754 @ 2024-09-17T04:38:45.900186261Z}" proposer=E3F5663C0298AF4CC666AC901CABC1C1F8324631
+I[2024-09-16|23:38:46.205] received complete proposal block             module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230
+I[2024-09-16|23:38:46.209] finalizing commit of block                   module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:46.211] finalized block                              module=state height=3 num_txs_res=0 num_val_updates=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.211] executed block                               module=state height=3 app_hash=0000000000000000
+I[2024-09-16|23:38:46.212] updates to validators                        module=state updates=BD7C8829B82ECCC7BF3CB24C96E720380983B697:0
+I[2024-09-16|23:38:46.213] committed state                              module=state height=3 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.213] verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.213] evidence already pending; ignoring           module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.214] indexed block events                         module=txindex height=3
+I[2024-09-16|23:38:46.304] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.304] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.305] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.305] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.305] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.305] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.305] finalizing commit of block                   module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:46.305] finalizing commit of block                   module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:46.305] finalizing commit of block                   module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:46.307] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.307] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.307] finalized block                              module=state height=3 num_txs_res=0 num_val_updates=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.307] executed block                               module=state height=3 app_hash=0000000000000000
+I[2024-09-16|23:38:46.307] finalized block                              module=state height=3 num_txs_res=0 num_val_updates=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.307] executed block                               module=state height=3 app_hash=0000000000000000
+I[2024-09-16|23:38:46.308] finalized block                              module=state height=3 num_txs_res=0 num_val_updates=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.308] executed block                               module=state height=3 app_hash=0000000000000000
+I[2024-09-16|23:38:46.308] updates to validators                        module=state updates=BD7C8829B82ECCC7BF3CB24C96E720380983B697:0
+I[2024-09-16|23:38:46.308] updates to validators                        module=state updates=BD7C8829B82ECCC7BF3CB24C96E720380983B697:0
+I[2024-09-16|23:38:46.308] committed state                              module=state height=3 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.308] committed state                              module=state height=3 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.309] updates to validators                        module=state updates=BD7C8829B82ECCC7BF3CB24C96E720380983B697:0
+I[2024-09-16|23:38:46.309] committed state                              module=state height=3 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.309] evidence already pending; ignoring           module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.310] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.310] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.311] indexed block events                         module=txindex height=3
+I[2024-09-16|23:38:46.311] indexed block events                         module=txindex height=3
+I[2024-09-16|23:38:46.311] indexed block events                         module=txindex height=3
+I[2024-09-16|23:38:46.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.406] Verified new evidence of byzantine behavior  module=evidence evidence="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.407] finalizing commit of block                   module=consensus height=3 hash=9EDAF341BFC95C71C311B27C07903EBECF4932B9846434A4087363F65A748230 root=0000000000000000 num_txs=0
+I[2024-09-16|23:38:46.408] finalized block                              module=state height=3 num_txs_res=0 num_val_updates=1 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.408] executed block                               module=state height=3 app_hash=0000000000000000
+I[2024-09-16|23:38:46.409] updates to validators                        module=state updates=BD7C8829B82ECCC7BF3CB24C96E720380983B697:0
+I[2024-09-16|23:38:46.409] committed state                              module=state height=3 block_app_hash=0000000000000000
+I[2024-09-16|23:38:46.410] indexed block events                         module=txindex height=3
+I[2024-09-16|23:38:46.507] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:46.507] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:47.209] Timed out                                    module=consensus dur=995.087296ms height=4 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:47.305] Timed out                                    module=consensus dur=994.651445ms height=4 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:47.305] Timed out                                    module=consensus dur=995.385293ms height=4 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:47.306] Timed out                                    module=consensus dur=995.367791ms height=4 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:47.308] received proposal                            module=consensus proposal="Proposal{4/0 (9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A:1:A31A73E11F2B, -1) 16C436C84C1B @ 2024-09-17T04:38:47.307283609Z}" proposer=E4D12352509167A4B867CD35D9FC4DB769B1B049
+I[2024-09-16|23:38:47.309] received complete proposal block             module=consensus height=4 hash=9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A
+I[2024-09-16|23:38:47.407] Timed out                                    module=consensus dur=996.733777ms height=4 round=0 step=RoundStepNewHeight
+I[2024-09-16|23:38:47.408] received proposal                            module=consensus proposal="Proposal{4/0 (9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A:1:A31A73E11F2B, -1) 16C436C84C1B @ 2024-09-17T04:38:47.307283609Z}" proposer=E4D12352509167A4B867CD35D9FC4DB769B1B049
+I[2024-09-16|23:38:47.409] received complete proposal block             module=consensus height=4 hash=9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A
+I[2024-09-16|23:38:47.409] received proposal                            module=consensus proposal="Proposal{4/0 (9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A:1:A31A73E11F2B, -1) 16C436C84C1B @ 2024-09-17T04:38:47.307283609Z}" proposer=E4D12352509167A4B867CD35D9FC4DB769B1B049
+I[2024-09-16|23:38:47.409] received complete proposal block             module=consensus height=4 hash=9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A
+I[2024-09-16|23:38:47.514] received proposal                            module=consensus proposal="Proposal{4/0 (9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A:1:A31A73E11F2B, -1) 16C436C84C1B @ 2024-09-17T04:38:47.307283609Z}" proposer=E4D12352509167A4B867CD35D9FC4DB769B1B049
+I[2024-09-16|23:38:47.514] received proposal                            module=consensus proposal="Proposal{4/0 (9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A:1:A31A73E11F2B, -1) 16C436C84C1B @ 2024-09-17T04:38:47.307283609Z}" proposer=E4D12352509167A4B867CD35D9FC4DB769B1B049
+I[2024-09-16|23:38:47.514] received complete proposal block             module=consensus height=4 hash=9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A
+I[2024-09-16|23:38:47.514] received complete proposal block             module=consensus height=4 hash=9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A
+I[2024-09-16|23:38:47.615] finalizing commit of block                   module=consensus height=4 hash=9E49A6E4780B4FEC3FCB2E22F17660A3CE4A8B10CB7640B693D166008F8F8F7A root=0000000000000000 num_txs=0
+E[2024-09-16|23:38:47.616] Stopping abci.socketClient for error: wanted to punish val "\xbd|\x88)\xb8.\xccǿ<\xb2L\x96\xe7 8\t\x83\xb6\x97" but can't find it!!!!!!!! module=abci-client connection=consensus
+I[2024-09-16|23:38:47.616] service stop                                 module=abci-client connection=consensus msg="Stopping socketClient service" impl=socketClient
+E[2024-09-16|23:38:47.617] consensus connection terminated. Did the application crash? Please restart CometBFT module=proxy err="wanted to punish val \"\\xbd|\\x88)\\xb8.\\xccǿ<\\xb2L\\x96\\xe7 8\\t\\x83\\xb6\\x97\" but can't find it!!!!!!!!"
+E[2024-09-16|23:38:47.617] error in proxyAppConn.FinalizeBlock          module=state err="wanted to punish val \"\\xbd|\\x88)\\xb8.\\xccǿ<\\xb2L\\x96\\xe7 8\\t\\x83\\xb6\\x97\" but can't find it!!!!!!!!"
+I[2024-09-16|23:38:47.617] signal trapped                               module=main msg="captured terminated, exiting..."
+I[2024-09-16|23:38:47.617] service stop                                 module=main msg="Stopping Node service" impl=Node
+E[2024-09-16|23:38:47.617] CONSENSUS FAILURE!!!                         module=consensus err="failed to apply block; error wanted to punish val \"\\xbd|\\x88)\\xb8.\\xccǿ<\\xb2L\\x96\\xe7 8\\t\\x83\\xb6\\x97\" but can't find it!!!!!!!!" stack="goroutine 57 [running]:\nruntime/debug.Stack()\n\t/home/jon/go123/src/runtime/debug/stack.go:26 +0x5e\ngithub.com/cometbft/cometbft/consensus.(*State).receiveRoutine.func2()\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:801 +0x46\npanic({0xf73c60?, 0xc0002e9970?})\n\t/home/jon/go123/src/runtime/panic.go:785 +0x132\ngithub.com/cometbft/cometbft/consensus.(*State).finalizeCommit(0xc000266a88, 0x4)\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:1781 +0xde5\ngithub.com/cometbft/cometbft/consensus.(*State).tryFinalizeCommit(0xc000266a88, 0x4)\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:1682 +0x2e8\ngithub.com/cometbft/cometbft/consensus.(*State).enterCommit.func1()\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:1617 +0x9c\ngithub.com/cometbft/cometbft/consensus.(*State).enterCommit(0xc000266a88, 0x4, 0x0)\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:1655 +0xc2f\ngithub.com/cometbft/cometbft/consensus.(*State).addVote(0xc000266a88, 0xc001d89c70, {0xc00069cf30, 0x28})\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:2335 +0x1c6d\ngithub.com/cometbft/cometbft/consensus.(*State).tryAddVote(0xc000266a88, 0xc001d89c70, {0xc00069cf30?, 0x0?})\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:2067 +0x26\ngithub.com/cometbft/cometbft/consensus.(*State).handleMsg(0xc000266a88, {{0x13be440, 0xc0000bc9f0}, {0xc00069cf30, 0x28}})\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:929 +0x38b\ngithub.com/cometbft/cometbft/consensus.(*State).receiveRoutine(0xc000266a88, 0x0)\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:836 +0x3f1\ncreated by github.com/cometbft/cometbft/consensus.(*State).OnStart in goroutine 230\n\t/home/jon/go/pkg/mod/github.com/cometbft/cometbft@v0.38.12/consensus/state.go:398 +0x10c\n"
+I[2024-09-16|23:38:47.617] service stop                                 module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal msg="Stopping baseWAL service" impl=baseWAL
+I[2024-09-16|23:38:47.617] Stopping Node                                module=main 
+I[2024-09-16|23:38:47.617] service stop                                 module=events msg="Stopping EventBus service" impl=EventBus
+I[2024-09-16|23:38:47.617] service stop                                 module=pubsub msg="Stopping PubSub service" impl=PubSub
+I[2024-09-16|23:38:47.617] service stop                                 module=txindex msg="Stopping IndexerService service" impl=IndexerService
+I[2024-09-16|23:38:47.617] service stop                                 module=consensus wal=/home/jon/github/jchappelow/comettest/n1/data/cs.wal/wal msg="Stopping Group service" impl=Group
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p msg="Stopping P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:52350 msg="Stopping MConnection service" impl=MConn{127.0.0.1:52350}
+I[2024-09-16|23:38:47.617] Connection is closed @ recvRoutine (likely by the other side) module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 conn=MConn{127.0.0.2:26656}
+E[2024-09-16|23:38:47.617] Stopping peer for error                      module=p2p peer="Peer{MConn{127.0.0.1:52350} 1bb55f8186128b61354d2b1967639cb6ead32757 in}" err="read tcp 127.0.0.2:26656->127.0.0.1:52350: use of closed network connection"
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Stopping MConnection service" impl=MConn{127.0.0.2:26656}
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:52350 msg="Stopping Peer service" impl="Peer{MConn{127.0.0.1:52350} 1bb55f8186128b61354d2b1967639cb6ead32757 in}"
+I[2024-09-16|23:38:47.617] Reconnecting to peer                         module=p2p addr=1bb55f8186128b61354d2b1967639cb6ead32757@127.0.0.1:26656
+E[2024-09-16|23:38:47.617] Stopping peer for error                      module=p2p peer="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}" err=EOF
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Stopping Peer service" impl="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}"
+E[2024-09-16|23:38:47.617] error while stopping peer                    module=p2p error="already stopped"
+I[2024-09-16|23:38:47.617] Reconnecting to peer                         module=p2p addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.1:52352 msg="Stopping MConnection service" impl=MConn{127.0.0.1:52352}
+I[2024-09-16|23:38:47.617] Connection is closed @ recvRoutine (likely by the other side) module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 conn=MConn{127.0.0.2:26656}
+E[2024-09-16|23:38:47.617] Stopping peer for error                      module=p2p peer="Peer{MConn{127.0.0.1:52352} 3df4de0b23eb6cd27d806313d6241698a9d953fa in}" err="read tcp 127.0.0.2:26656->127.0.0.1:52352: use of closed network connection"
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Stopping MConnection service" impl=MConn{127.0.0.2:26656}
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.1:52352 msg="Stopping Peer service" impl="Peer{MConn{127.0.0.1:52352} 3df4de0b23eb6cd27d806313d6241698a9d953fa in}"
+I[2024-09-16|23:38:47.617] Reconnecting to peer                         module=p2p addr=3df4de0b23eb6cd27d806313d6241698a9d953fa@127.0.0.3:26656
+E[2024-09-16|23:38:47.617] error while stopping peer                    module=p2p error="already stopped"
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.1:52356 msg="Stopping MConnection service" impl=MConn{127.0.0.1:52356}
+E[2024-09-16|23:38:47.617] Stopping peer for error                      module=p2p peer="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}" err=EOF
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=eb0852d124a184f65b37ff6e9ebcef4818c7eb0b@127.0.0.1:52356 msg="Stopping Peer service" impl="Peer{MConn{127.0.0.1:52356} eb0852d124a184f65b37ff6e9ebcef4818c7eb0b in}"
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Stopping Peer service" impl="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}"
+I[2024-09-16|23:38:47.617] Connection is closed @ recvRoutine (likely by the other side) module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 conn=MConn{127.0.0.2:26656}
+I[2024-09-16|23:38:47.617] service stop                                 module=mempool msg="Stopping Mempool service" impl=Mempool
+I[2024-09-16|23:38:47.617] service stop                                 module=blocksync msg="Stopping Reactor service" impl=Reactor
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Stopping MConnection service" impl=MConn{127.0.0.2:26656}
+E[2024-09-16|23:38:47.617] Error stopping pool                          module=blocksync err="already stopped"
+I[2024-09-16|23:38:47.617] Reconnecting to peer                         module=p2p addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:47.617] service stop                                 module=consensus msg="Stopping Consensus service" impl=ConsensusReactor
+I[2024-09-16|23:38:47.617] service stop                                 module=consensus msg="Stopping State service" impl=ConsensusState
+I[2024-09-16|23:38:47.617] service stop                                 module=consensus msg="Stopping TimeoutTicker service" impl=TimeoutTicker
+I[2024-09-16|23:38:47.617] service stop                                 module=evidence msg="Stopping Evidence service" impl=Evidence
+I[2024-09-16|23:38:47.617] service stop                                 module=statesync msg="Stopping StateSync service" impl=StateSync
+E[2024-09-16|23:38:47.617] Stopping peer for error                      module=p2p peer="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}" err=EOF
+I[2024-09-16|23:38:47.617] Closing rpc listener                         module=main listener="&{Listener:0xc000040f00 sem:0xc00018f730 closeOnce:{done:{_:{} v:0} m:{state:0 sema:0}} done:0xc00018f7a0}"
+I[2024-09-16|23:38:47.617] service stop                                 module=p2p peer=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656 msg="Stopping Peer service" impl="Peer{MConn{127.0.0.2:26656} cc4c2c39e90d848b03b46c03d84990912a407e1a out}"
+E[2024-09-16|23:38:47.617] Stopped accept routine, as transport is closed module=p2p numPeers=0
+I[2024-09-16|23:38:47.617] RPC HTTP server stopped                      module=rpc-server err="accept tcp 127.0.0.2:26657: use of closed network connection"
+E[2024-09-16|23:38:47.617] Error serving server                         module=main err="accept tcp 127.0.0.2:26657: use of closed network connection"
+I[2024-09-16|23:38:47.617] Reconnecting to peer                         module=p2p addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:47.617] Error reconnecting to peer. Trying again     module=p2p tries=0 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:47.617] Closing blockstore                           module=main 
+I[2024-09-16|23:38:47.617] Closing statestore                           module=main 
+I[2024-09-16|23:38:47.617] Error reconnecting to peer. Trying again     module=p2p tries=0 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:47.617] Closing evidencestore                        module=main 
+I[2024-09-16|23:38:47.619] Error reconnecting to peer. Trying again     module=p2p tries=0 err="auth failure: handshake failed: read tcp 127.0.0.1:47298->127.0.0.2:26656: read: connection reset by peer" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:50.306] Timed out                                    module=consensus dur=3s height=4 round=0 step=RoundStepPropose
+I[2024-09-16|23:38:50.306] Timed out                                    module=consensus dur=3s height=4 round=0 step=RoundStepPropose
+I[2024-09-16|23:38:50.307] Timed out                                    module=consensus dur=3s height=4 round=0 step=RoundStepPropose
+I[2024-09-16|23:38:50.408] Timed out                                    module=consensus dur=3s height=4 round=0 step=RoundStepPropose
+I[2024-09-16|23:38:53.210] Error reconnecting to peer. Trying again     module=p2p tries=1 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:55.085] Error reconnecting to peer. Trying again     module=p2p tries=1 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:55.289] Error reconnecting to peer. Trying again     module=p2p tries=1 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:38:56.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.406] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.406] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.406] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.406] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.508] Attempting to add evidence                   module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:56.508] Evidence already pending, ignoring this one  module=evidence ev="DuplicateVoteEvidence{VoteA: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 000000000000 A1E2BC18B4AD 000000000000 @ 2024-09-17T04:38:44.89923352Z}, VoteB: Vote{1:BD7C8829B82E 2/00/SIGNED_MSG_TYPE_PRECOMMIT(Precommit) 8F957B75FD29 CB182ADA8BCA 000000000000 @ 2024-09-17T04:38:44.798666755Z}}"
+I[2024-09-16|23:38:58.327] Error reconnecting to peer. Trying again     module=p2p tries=2 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:39:00.704] Error reconnecting to peer. Trying again     module=p2p tries=2 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+I[2024-09-16|23:39:01.872] Error reconnecting to peer. Trying again     module=p2p tries=2 err="dial tcp 127.0.0.2:26656: connect: connection refused" addr=cc4c2c39e90d848b03b46c03d84990912a407e1a@127.0.0.2:26656
+^CI[2024-09-16|23:39:03.793] signal trapped                               module=main msg="captured interrupt, exiting..."
+I[2024-09-16|23:39:03.793] service stop                                 module=main msg="Stopping Node service" impl=Node
+I[2024-09-16|23:39:03.793] Stopping Node                                module=main 
+I[2024-09-16|23:39:03.793] service stop                                 module=events msg="Stopping EventBus service" impl=EventBus
+I[2024-09-16|23:39:03.793] service stop                                 module=pubsub msg="Stopping PubSub service" impl=PubSub
+I[2024-09-16|23:39:03.793] service stop                                 module=txindex msg="Stopping IndexerService service" impl=IndexerService
+I[2024-09-16|23:39:03.793] service stop                                 module=p2p msg="Stopping P2P Switch service" impl="P2P Switch"
+I[2024-09-16|23:39:03.793] signal trapped                               module=main msg="captured interrupt, exiting..."
+I[2024-09-16|23:39:03.793] service stop                                 module=main msg="Stopping Node service" impl=Node
+I[2024-09-16|23:39:03.793] Stopping Node                                module=main 
+I[2024-09-16|23:39:03.793] service stop                                 module=events msg="Stopping EventBus service" impl=EventBus
+stopping app servers
+app servers stopped
+ jon  monkey-cube  @GH  jchappelow  comettest   main  8✎  1+  ERROR  $  c
+ jon  monkey-cube  @GH  jchappelow  comettest   main  8✎  1+  $  
+
